@@ -3,44 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takudzwa Nyamangara</title>
+    <meta name="description" content="Junior Frontend Developer CV - HTML, CSS, JavaScript, and responsive web design skills">
+    <meta name="keywords" content="frontend developer, web developer, HTML, CSS, JavaScript, responsive design, accessibility">
+    <meta name="author" content="Takudzwa Nyamangara">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Takudzwa Nyamangara - CV">
+    <meta property="og:description" content="Professional CV showcasing frontend development skills and experience">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://yourwebsite.com/cv">
+    <meta property="og:image" content="https://yourwebsite.com/profile-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <title>Takudzwa Nyamangara - CV</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+        }
+        
+        .cv-container {
+            background-color: white;
+            padding: 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .job-title {
+            color: #27ae60;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin: 3px 0;
+            font-size: 0.95em;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #27ae60;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #27ae60;
+        }
+        
+        .job, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-header, .education-header {
+            margin-bottom: 8px;
+        }
+        
+        .company-name, .school-name {
+            color: #2980b9;
+            font-weight: bold;
+        }
+        
+        .job-duration, .education-duration {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .skills-list {
+            line-height: 1.8;
+        }
+        
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-links {
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <main>
+    <main class="cv-container">
         <header>
-            <hr>
-            <h1 style="color: blue;">Takudzwa Nyamangara</h1>
+            <hr style="border: none; height: 4px; background-color: black; margin-bottom: 20px;">
+            <h1>Takudzwa Nyamangara</h1>
+            <p class="job-title">Junior Frontend Developer</p>
+            
+            <address class="contact-info">
+                <p>56 Borrowdale Dallas Street</p>
+                <p>Harare, ST 4694</p>
+                <p>(263) 456-4879</p>
+                <p><a href="takudzwanyamangara0@gmail.com">takudzwanyamangara0@gmail.com</a></p>
+            </address>
         </header>
-        <section>
-            <h2 style="color: green;">Junior Frontend Developer</h2>
-            <p>56 Borrowdale Dallas Street <br>Harare, ST 1243 <br>(263) 475-3242 <br>takudzwanyamangara0@gmail.com </p>
-        </section> 
-
-        <section>
-            <h2 style="color: green;" style="font-size: small;" >Skills</h2>
-            <p>HTML, CSS, JavaScript, Web Design, Technical Writing, Presentation</p>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <p class="skills-list">HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writing, Presentation</p>
         </section>
-
-        <section>
-            <h2 style="color: green;">Education</h2>
-            <p><span style="color: aqua;">Africa University, Mutare - Bachelor of Science in Computer Science</span> <br>August 2025 to June 2029</p>
-            <h4>List of Interesting things I did:</h4>
-            <ul>
-                <li>Making Friends</li>
-                <li>Going Out</li>
-                <li>Sports</li>
-            </ul>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <article class="education-item">
+                <div class="education-header">
+                    <p><span class="school-name">Africa University, Mutare</span> - Bachelor of Computer Science</p>
+                    <p class="education-duration">August 2025 to June 2029</p>
+                </div>
+                <p>List of exciting things you did at university</p>
+                <ul>
+                    <li>Going Out</li>
+                    <li>Making Friends</li>
+                    <li>Sports</li>
+                </ul>
+            </article>
         </section>
-
-        <section>
-            <h2 style="color: green;">Experience</h2>
-
+        
+        <section id="experience">
+            <h2>Experience</h2>
+            
+            <article class="job">
+                <div class="job-header">
+                    <p><span class="company-name">Digital Waves Marketing, Gweru</span> - Web Development Intern</p>
+                    <p class="job-duration">January 2023 to May 2023</p>
+                </div>
+                <ul>
+                    <li>Previous internship focused on landing pages, email templates, and cross-browser testing</li>
+                    <li>Assisted in developing and maintaining the company website</li>
+                    <li>Conducted testing to ensure cross-browser compatibility and responsiveness</li>
+                </ul>
+                <p><strong>Skills:</strong> List of skills used or gained at this company</p>
+            </article>
+            
+            <article class="job">
+                <div class="job-header">
+                    <p><span class="company-name">TechStart Solutions, Harare</span> - Junior Frontend Developer</p>
+                    <p class="job-duration">June 2023 to April 2024</p>
+                </div>
+                <ul>
+                    <li>Current position with achievements in responsive design, accessibility, and performance optimization</li>
+                    <li>Collaborated with designers to implement user-friendly interfaces</li>
+                    <li>Optimized web applications for maximum speed and scalability</li>
+                </ul>
+                <p><strong>Skills:</strong> List of skills used or gained at this company</p>
+            </article>
         </section>
-
-        <section>
-            <h2 style="color: green;">Across the Internet</h2>
+        
+        <section id="social">
+            <h2>Across the Internet</h2>
+            <div class="social-links">
+                <p><a href="https://www.linkedin.com/in/takudzwa-nyamangara-b71570338/">LinkedIn</a> , <a href="https://github.com/buildwithtaku">GitHub profile</a></p>
+            </div>
         </section>
     </main>
-
 </body>
 </html>
